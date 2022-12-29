@@ -1,0 +1,588 @@
+body{
+    margin: 0;
+}
+.top_bar{
+    width: 100%;
+    background-color: black;
+    height: 45px;
+    color: white;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+.top_bar button{
+    background-color: inherit;
+    display: flex;
+    justify-content:center;
+}
+.sony{
+    color: white;
+    font-size:26px;
+    font-weight: bold;   
+}
+.nav_bar{   
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 55px; 
+    position: relative;    
+}
+.nav_left{
+    width: 60%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+.dropdown button{
+    background-color: inherit;
+    border: none;
+    color: black;
+}
+.dropdown button:hover{
+ color: rgb(13, 133, 246);
+ background-color: inherit;
+}
+.nav_right{
+    width: 40%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 19px;
+}
+.nav_rightcontent{
+    display: flex;
+    justify-content: end;
+}
+.signin_button{
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(49, 147, 232);
+   margin-right: 25px;
+}
+.signin{
+    font-weight: 500;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+}
+.signin_button:hover{
+    background-color: rgb(49, 109, 161);
+}
+.search_button{
+    background-color: inherit;
+    border: none;
+}
+.nav_bar::after{
+    position: fixed;
+    top: 0;
+}
+.banner{
+    height: 645px;
+    width: 100%;
+    background-image: linear-gradient(rgb(2, 13, 35), rgb(9, 91, 191));;
+}
+.banner_images{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.banner_images::after{
+    position: fixed;
+}
+.banner_content{
+    padding-top: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.browsing_btn{
+border-radius: 50px;
+height: 33px;
+border-color: inherit;
+}
+.browsing_btncontent{
+    padding: 5px;
+    font-weight: 600;
+}
+.browsing_btncontent:hover{
+    background-color: rgb(221, 218, 218);
+    border: 2px solid black; 
+    border-radius: inherit;
+    height: 35px;
+    border-color: black;
+}
+.banner_img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;  
+}
+.banner_img img{
+    border-radius: 10px;
+    border: 3px solid white;
+}
+.banner_img img:hover{
+  margin-top: -15px;
+  border: 3px solid blue;
+  transition: 0.2s ease-in-out;
+}
+.homepage_hardware{
+    width:100%;
+}
+.hardware_image{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.hardware_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hardware_content p{
+font-size: 17px;
+color: rgb(110, 109, 109);
+}
+.learnmore_btn{
+    border-radius: 50px;
+    background-color: rgb(49, 147, 232);
+    border: none;
+    height: 33px;
+}
+.learnmore_btn:hover{
+    background-color: rgb(8, 101, 241);
+    border: 2px solid black;
+}
+.learnmore{
+    color: white;
+    font-weight: 600;
+    padding: 4px;
+}
+.display{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px; 
+    background-color:solid white;
+}
+.display span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.display div{
+-webkit-filter: opacity(70%);
+filter:blur(70%) ;
+transition: 0.2s ease-in-out;
+}
+.display div:hover{
+    -webkit-filter: opacity(100%);
+	filter: opacity(100%);
+}
+.explore{
+    width:100%;
+    height: 500px;
+    background-image: linear-gradient(to right, rgb(212, 199, 11),rgb(212, 204, 204), rgb(208, 211, 212));;
+align-items: center;
+display: flex;
+margin-top: 50px;
+}
+.explore_poster{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.explore_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.explore_content h2{
+    font-weight: 700;
+}
+.explore_content p{
+    font-size:18px;
+}
+.explore_btn{
+    border-radius: 50px;
+    background-color: rgb(49, 147, 232);
+    border: none;
+    height: 35px;
+}
+.explore_btn:hover{
+    background-color: rgb(8, 101, 241);
+    border: 2px solid black;
+}
+.explorebtncontent{
+    color: white;
+    font-weight: 600;
+    padding: 4px;
+}
+.latest_wrapper{
+    width: 100%;
+}
+.latest_section{
+  background-image: linear-gradient(to right bottom,rgb(232, 232, 232), rgb(112, 74, 147),rgb(80, 53, 105) , rgb(50, 33, 67),rgb(49, 33, 67));
+}
+.row_wrapper{
+    padding-top: 50px;
+}
+.content_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right:80px;
+    padding-left: 80px;
+}
+.latest_content{
+    color: white;
+    padding-bottom: 40px;
+}
+.find_btn{
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    height: 35px;
+}
+.find_btncontent{
+    color: black;
+    font-weight: 600;
+    padding: 4px;
+}
+.find_btn:hover{
+    border: 2px solid black;
+    background-color: rgb(247, 244, 244);
+}
+.latestposter{
+    background-image: linear-gradient(blur ,rgb(37, 22, 50),rgb(26, 16, 37));
+}
+.latstposter{
+    padding-left: 80px;
+}
+.latstposter div{
+    padding-bottom: 40px;
+}
+.latstposter img{
+    border-radius: 20px;
+}
+.latstposter img:hover{
+    border:  2px solid;
+    transition: 0.1s ease-in-out;
+}
+.latstposter p{
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    display: block;
+    justify-items: center;
+    align-items: center;
+}
+.buy_poster{
+    width: 100%;
+    height: 600px;
+    background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/the-last-of-us-part-i-keyart-01-en-18may22?$1200px$);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.buycontent span{
+    font-weight: 700;
+}
+.buycontent p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.buycontent button{
+    border-radius: 50px;
+    background-color: red;
+    height: 35px;
+}
+.buycontent button:hover{
+    border: 2px solid black;
+    background-color: rgb(244, 12, 12);
+
+}
+.buycontent_wrapper{
+    color: white;
+    padding-left: 80px;
+    padding-top: 420px;
+}
+.game_page{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+}
+.game_wrapper{
+    padding: 40px;
+    padding-right:70px ;
+    padding-bottom: 60px;
+}
+.forwordbackword{
+    display: flex;
+    justify-content: end;
+}
+.forwordbackword button{
+    padding: 5px;
+    background-color: inherit;
+}
+.poster img{
+    padding-top:20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+}
+.poster img:hover{
+    margin: -2px;
+    transition: 0.2s ease-in-out;
+}
+.poster span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.explorepage_wrapper{
+    width: 100%;
+}
+.explore_header span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.explore_header{
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+.explore_header p{
+    color: rgb(92, 90, 90);
+    font-size: 18px;
+}
+.explore_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 40px;
+}
+.explore_image{
+    padding-bottom: 20px;
+}
+.explore_image p{
+    color: rgb(92, 90, 90);
+    font-size: 18px;
+}
+.explore_footer button{
+    background-color: rgb(49, 147, 232);
+    border-radius: 50px;
+    height: 35px;
+    border: none;
+}
+.explore_footer button:hover{
+    background-color: rgb(29, 129, 216);
+    border: 2px solid black;
+}
+.learnmore{
+    padding: 4px;
+}
+.psstore_wrapper{
+width: 100%;
+}
+.dealpage_wrapper{
+    margin:30px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.deal_page{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 40px;
+}
+.psshopping_logo{
+    height: 100px;
+    width: 330px;
+}
+
+.deal_left{
+   padding-top: 30px;
+   padding-bottom: 30px;   
+}
+.deal_left img{
+    border-radius: 20px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.deal_left img:hover{
+    -webkit-transform: scale(1.02);
+	transform: scale(1.02);
+}
+.deal_right{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.deal_right p{
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(92, 90, 90);
+}
+.deal_right button{
+    border-radius: 50px;
+    background-color: red;
+    height: 35px;
+}
+.seedeals{
+    padding: 2px;
+    font-weight: 500;
+}
+.deal_right button:hover{
+    border: 2px solid black;
+    background-color: rgb(244, 12, 12);
+}
+
+.psnews_header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.backnextbtn{
+    display: flex;
+    flex-direction: row;
+}
+.ctrlbtn{
+    background-color: inherit;
+    border: none;
+}
+.psnews_wrapper{
+    width: 100%;
+}
+.card{
+    height: 5px;
+    width: 4px;
+    margin: 10px;
+}
+.psnews_page{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:20px ;
+    padding-left: 60px;
+}
+.news_page{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+}
+.news_pages a{
+    text-decoration: none;
+}
+.card-title{
+    font-size: large;
+    color: black;
+}
+.card-text{
+    color: rgb(92, 90, 90);
+    font-size: 14px;
+}
+.card-body span{
+    color: rgb(92, 90, 90);
+    font-size: 12px;
+}
+.news_banner p{
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    padding-bottom: 30px;
+}
+.contact_wrapper{
+    height: auto;
+    width: 100%;
+    background-color: aliceblue;
+}
+.contact_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.contact_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact_logo img{
+    height: 120px;
+    width: 120px;
+}
+.contact_logo img:hover{
+    height: 121px;
+    width: 121px;
+    transition: 0.2s ease-in-out;
+}
+.contact_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 80px;
+}
+.contact_heading h2{
+    font-weight: 350;
+}
+footer{
+    height: auto;
+    width: 100%;
+    background-color: rgb(4, 90, 195);
+    padding: 70px;
+}
+.topright_wrapper{
+    padding-bottom: 20px;
+}
+.top_wrapper{
+    padding-bottom:  10px;
+    line-height: 28px;
+}
+.top_wrapper a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.top_wrapper li :hover{
+    color: white;
+}
+.topcol{
+    padding-bottom: 15px;
+}
+.bottom_wrapper img{
+    height: 70px;
+    width: 130px;  
+}
+.bottom_wrapper p{
+    color: white;
+}
+.bottom_wrapper a{
+    color: white;
+}
+.bottom_wrapper a p:hover{
+    color: white;
+}
