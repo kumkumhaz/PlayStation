@@ -101,20 +101,20 @@ body{
     align-items: center;
 }
 .browsing_btn{
-border-radius: 50px;
-height: 33px;
-border-color: inherit;
+    border-radius: 50px;
+    background-color: white;
+    border: none;
+    height: 33px;
+    transition: 0.1s;
+    padding-bottom: 2px;
+}
+.browsing_btn:hover{
+    border: 2px solid black;
 }
 .browsing_btncontent{
-    padding: 5px;
+    color: black;
     font-weight: 600;
-}
-.browsing_btncontent:hover{
-    background-color: rgb(221, 218, 218);
-    border: 2px solid black; 
-    border-radius: inherit;
-    height: 35px;
-    border-color: black;
+    padding: 4px;
 }
 .banner_img{
     display: flex;
@@ -146,8 +146,8 @@ border-color: inherit;
     flex-direction: column;
 }
 .hardware_content p{
-font-size: 17px;
-color: rgb(110, 109, 109);
+    font-size: 17px;
+    color: rgb(110, 109, 109);
 }
 .learnmore_btn{
     border-radius: 50px;
@@ -176,10 +176,16 @@ color: rgb(110, 109, 109);
     align-items: center;
     justify-content: center;
 }
+.displayimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .display div{
--webkit-filter: opacity(70%);
-filter:blur(70%) ;
-transition: 0.2s ease-in-out;
+   -webkit-filter: opacity(70%);
+    filter:blur(70%) ;
+    transition: 0.2s ease-in-out;
 }
 .display div:hover{
     -webkit-filter: opacity(100%);
@@ -189,14 +195,22 @@ transition: 0.2s ease-in-out;
     width:100%;
     height: 500px;
     background-image: linear-gradient(to right, rgb(212, 199, 11),rgb(212, 204, 204), rgb(208, 211, 212));;
-align-items: center;
-display: flex;
-margin-top: 50px;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
 }
 .explore_poster{
     display: flex;
    justify-content: center;
    align-items: center;
+   -webkit-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition: .3s ease-in-out;
+   transition: .3s ease-in-out;
+}
+.explore_poster:hover{
+    -webkit-transform: scale(1.02);
+	transform: scale(1.02);
 }
 .explore_content{
     display: flex;
@@ -229,7 +243,7 @@ margin-top: 50px;
     width: 100%;
 }
 .latest_section{
-  background-image: linear-gradient(to right bottom,rgb(232, 232, 232), rgb(112, 74, 147),rgb(80, 53, 105) , rgb(50, 33, 67),rgb(49, 33, 67));
+    background-image: linear-gradient(to right bottom,rgb(232, 232, 232), rgb(112, 74, 147),rgb(80, 53, 105) , rgb(50, 33, 67),rgb(49, 33, 67));
 }
 .row_wrapper{
     padding-top: 50px;
@@ -272,9 +286,15 @@ margin-top: 50px;
 }
 .latstposter img{
     border-radius: 20px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 .latstposter img:hover{
-    border:  2px solid;
+    -webkit-transform: scale(1.02);
+	transform: scale(1.02);
+    border:  2px solid whitesmoke;
     transition: 0.1s ease-in-out;
 }
 .latstposter p{
@@ -333,6 +353,11 @@ margin-top: 50px;
 .forwordbackword button{
     padding: 5px;
     background-color: inherit;
+    border: none;
+}
+.forwordbackword button:hover{
+    border: 1px solid blue;
+    border-radius: 50%;
 }
 .poster img{
     padding-top:20px;
@@ -461,7 +486,7 @@ width: 100%;
     justify-content: center;
     flex-direction: column;
 }
-.backnextbtn{
+/* .backnextbtn{
     display: flex;
     flex-direction: row;
 }
@@ -469,6 +494,10 @@ width: 100%;
     background-color: inherit;
     border: none;
 }
+.ctrlbtn:hover{
+    border: 2px solid blue;
+    border-radius: 30%;
+} */
 .psnews_wrapper{
     width: 100%;
 }
@@ -476,6 +505,9 @@ width: 100%;
     height: 5px;
     width: 4px;
     margin: 10px;
+}
+.card:hover{
+    border: 1px solid blue;
 }
 .psnews_page{
     display: flex;
@@ -488,6 +520,9 @@ width: 100%;
     height: 38px;
     width: 38px;
     border-radius: 50%;
+}
+.news_page:hover{
+    border: 1px solid blue;
 }
 .news_pages a{
     text-decoration: none;
@@ -535,8 +570,9 @@ width: 100%;
     width: 120px;
 }
 .contact_logo img:hover{
-    height: 121px;
-    width: 121px;
+    background-color: rgb(228, 225, 225);
+    border-style: double;
+    border-radius: 30px;
     transition: 0.2s ease-in-out;
 }
 .contact_heading{
